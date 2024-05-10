@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Gradient1: hsl(6, 100%, 80%);
+    --Gradient2: hsl(335, 100%, 65%);
+
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+
+    font-family: "Raleway", sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background-image: url(./images/bg-mobile.png);
+    background-size: cover;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+
+.card01 {
+    max-width: 40rem;
+    background-color: var(--DarkBlue);
+    border-radius: 10px 100px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    text-align: start;
+    gap: 1em;
+    padding: 1em;
+   
+}
+
+.logo {
+    width: 55%;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+
+.sub-head {
+    background-color: var(--VeryDarkBlue);
+    border-radius: 10px;
+    padding: 1em;
+    margin-inline-start: .5em;
+    margin-bottom: 1em;
+    width: 3em;
+    height: 3em;
+}
+
+
+
+
+.card02 {
+    max-width: 40rem;
+    height: 9.1rem;
+    background-color: var(--DarkBlue);
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 1em;
+    padding: 1em;
+    
+}
+
+.detail {
+    color: var(--PaleBlue);
+    margin-top: 1em;
+}
+
+
+
+.loader {
+    display: flex;
+    align-items: center;
+    height: 1em;
+    width: 100%;
+    background-color: hslA(229, 57%, 11%, .5);
+    border-radius: 50px;
+    z-index: 0;
+    margin-block: 1em;
+
+}
+
+.loader-total {
+    position: relative;
+   
+
+
+    width: 70%;
+    background-image: linear-gradient(var(--Gradient1), var(--Gradient2));
+    border-radius: 50px;
+    z-index: 1;
+
+}
+
+.loader-dot {
+    position: relative;
+    left: 91%;
+    height: .9em;
+    width: .9em;
+    background-color: white;
+    border-radius: 50px;
+    z-index: 2;
+
+}
+
+
+
+
+
+
+
+
+
+.GB {
+    display: flex;
+    justify-content: space-between;
+    font-size: .75em;
+    color: var(--PaleBlue);
+}
+
+.total {
+
+
+
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    background-color: white;
+    padding: 1em;
+    padding-block: .75em;
+    border-radius: 10px;
+
+}
+
+.score {
+    font-size: 2em;
+    font-weight: 700;
+
+}
+
+.GB-left {
+    position: relative;
+    bottom: 5px;
+    font-size: .25em;
+    color: rgba(0, 0, 0, .5);
+
+
+}
+
+footer {
+    margin-top: 10rem;
+    font-size: .5em;
+}
+
+
+@media (min-width: 375px) {
+    body {
+        background-color: var(--VeryDarkBlue);
+        background-image: url(./images/bg-desktop.png);
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 12em;
+    }
+    .card01 {
+        padding-right: 7em;
+    }
+    .logo {
+        width: 85%;
+    }
+    .card02 {
+        width: 30em;
+        padding-bottom: 0em;
+    }
+    .detail {
+        display: flex;
+    }
+    .loader-dot {
+        position: relative;
+        left: 95%;
+        height: .9em;
+        width: .9em;
+        background-color: white;
+        border-radius: 50px;
+        z-index: 2;
+    
+    }
+
+    .total {
+
+
+        height: 4em;
+        display: inline-block;
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+        position: relative;
+        left: 150px;
+        top: -150px;
+        z-index: 1;
+        background-color: white;
+        padding: 1em;
+        padding-block: .75em;
+        border-radius: 10px 10px - 10px;
+    
+    }
+    .arrow-left {
+        position: relative;
+        top: -5px;
+        right: -16px;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent; 
+        
+        border-right:20px solid white; 
+        z-index: 2;
+      }
+      footer {
+        margin-top: 10rem;
+        font-size: 1em;
+    }
+    
+    
+    
+}
