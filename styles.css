@@ -43,7 +43,7 @@ body {
     text-align: start;
     gap: 1em;
     padding: 1em;
-   
+
 }
 
 .logo {
@@ -73,11 +73,13 @@ body {
     border-radius: 10px 10px 10px 10px;
     margin-top: 1em;
     padding: 1em;
-    
+
 }
 
 .detail {
     color: var(--PaleBlue);
+    font-weight: 400;
+    font-size: .9em;
     margin-top: 1em;
 }
 
@@ -97,7 +99,7 @@ body {
 
 .loader-total {
     position: relative;
-   
+
 
 
     width: 70%;
@@ -187,19 +189,24 @@ footer {
         gap: 2rem;
         margin-top: 12em;
     }
+
     .card01 {
         padding-right: 7em;
     }
+
     .logo {
         width: 85%;
     }
+
     .card02 {
         width: 30em;
         padding-bottom: 0em;
     }
+
     .detail {
         display: flex;
     }
+
     .loader-dot {
         position: relative;
         left: 95%;
@@ -208,7 +215,7 @@ footer {
         background-color: white;
         border-radius: 50px;
         z-index: 2;
-    
+
     }
 
     .total {
@@ -216,7 +223,7 @@ footer {
 
         height: 4em;
         display: inline-block;
-     
+
         text-align: center;
         position: relative;
         left: 150px;
@@ -226,23 +233,25 @@ footer {
         padding: 1em;
         padding-block: .75em;
         border-radius: 10px 10px - 10px;
-    
+
     }
+
     .arrow-left {
         position: relative;
         top: -5px;
         right: -16px;
         border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent; 
-        
-        border-right:20px solid white; 
+        border-bottom: 20px solid transparent;
+
+        border-right: 20px solid white;
         z-index: 2;
-      }
-      footer {
+    }
+
+    footer {
         margin-top: 10rem;
         font-size: 1em;
     }
-    
-    
-    
+
+
+
 }
