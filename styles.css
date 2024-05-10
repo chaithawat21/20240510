@@ -39,8 +39,7 @@ body {
     border-radius: 10px 100px 10px 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start;
-    align-items: flex-start; */
+
     text-align: start;
     gap: 1em;
     padding: 1em;
@@ -217,8 +216,7 @@ footer {
 
         height: 4em;
         display: inline-block;
-        /* justify-content: center;
-        align-items: center; */
+     
         text-align: center;
         position: relative;
         left: 150px;
